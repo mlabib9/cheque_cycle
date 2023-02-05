@@ -1,0 +1,63 @@
+{
+ "charts": [],
+ "content": "[{\"type\":\"paragraph\",\"data\":{\"text\":\"<b>Copyright (c) 2022, brandimic.com</b>\",\"col\":12}},{\"type\":\"header\",\"data\":{\"text\":\"<span class=\\\"h4\\\"><b>Shortcuts</b></span>\",\"col\":12}},{\"type\":\"shortcut\",\"data\":{\"shortcut_name\":\"Cheques\",\"col\":3}},{\"type\":\"paragraph\",\"data\":{\"text\":\"<span class=\\\"h4\\\"><b>Clearance</b></span>\",\"col\":12}},{\"type\":\"quick_list\",\"data\":{\"quick_list_name\":\"Cheque Clearance This Month\",\"col\":4}},{\"type\":\"quick_list\",\"data\":{\"quick_list_name\":\"Cheque Clearance This Week\",\"col\":4}},{\"type\":\"quick_list\",\"data\":{\"quick_list_name\":\"Cheque Clearance Today\",\"col\":4}},{\"type\":\"header\",\"data\":{\"text\":\"<span class=\\\"h4\\\"><b>Settings</b></span>\",\"col\":12}},{\"type\":\"shortcut\",\"data\":{\"shortcut_name\":\"Cheque Status\",\"col\":3}}]",
+ "creation": "2022-08-31 13:00:56.176428",
+ "docstatus": 0,
+ "doctype": "Workspace",
+ "for_user": "",
+ "hide_custom": 0,
+ "icon": "milestone",
+ "idx": 0,
+ "label": "Cheque",
+ "links": [],
+ "modified": "2022-10-14 06:50:44.134370",
+ "modified_by": "Administrator",
+ "module": "Cheque Cycle",
+ "name": "Cheque",
+ "owner": "it@brandimic.com",
+ "parent_page": "Accounting",
+ "public": 1,
+ "quick_lists": [
+  {
+   "document_type": "Cheques",
+   "label": "Cheque Clearance This Week",
+   "quick_list_filter": "{\"clearance_date\":[\"Timespan\",\"this week\"]}"
+  },
+  {
+   "document_type": "Cheques",
+   "label": "Cheque Clearance Today",
+   "quick_list_filter": "{\"clearance_date\":[\"Timespan\",\"this month\"]}"
+  },
+  {
+   "document_type": "Cheques",
+   "label": "Cheque Clearance This Month",
+   "quick_list_filter": "{\"clearance_date\":[\"Timespan\",\"this month\"]}"
+  }
+ ],
+ "roles": [
+  {
+   "role": "Accounts Manager"
+  },
+  {
+   "role": "Accounts User"
+  }
+ ],
+ "sequence_id": 3.0,
+ "shortcuts": [
+  {
+   "color": "Grey",
+   "doc_view": "List",
+   "label": "Cheque Status",
+   "link_to": "Cheque Status",
+   "type": "DocType"
+  },
+  {
+   "color": "Grey",
+   "doc_view": "List",
+   "label": "Cheques",
+   "link_to": "Cheques",
+   "type": "DocType"
+  }
+ ],
+ "title": "Cheque"
+}

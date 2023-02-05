@@ -1,0 +1,348 @@
+{
+ "actions": [],
+ "autoname": "field:number",
+ "creation": "2022-08-24 11:15:39.771560",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "column_break_32",
+  "number",
+  "cheque_status",
+  "type",
+  "section_break_4",
+  "transaction_date",
+  "reference_date",
+  "clearance_date",
+  "amount",
+  "dashboard_tab",
+  "column_break_8",
+  "issuer_bank",
+  "column_break_13",
+  "bank",
+  "column_break_15",
+  "bank_account",
+  "party_information_section",
+  "party_type",
+  "party",
+  "column_break_12",
+  "party_account",
+  "against_account",
+  "column_break_33",
+  "last_transaction_account",
+  "endorsement_tab",
+  "endorsed_part_type",
+  "column_break_22",
+  "endoresd_party",
+  "column_break_31",
+  "endoresd_transaction",
+  "reference_section",
+  "reference_type",
+  "column_break_19",
+  "reference_name",
+  "amended_from",
+  "company",
+  "details_tab"
+ ],
+ "fields": [
+  {
+   "fieldname": "type",
+   "fieldtype": "Select",
+   "in_list_view": 1,
+   "label": "Type",
+   "options": "Pay\nReceive",
+   "read_only": 1,
+   "reqd": 1
+  },
+  {
+   "fieldname": "section_break_4",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "transaction_date",
+   "fieldtype": "Date",
+   "in_list_view": 1,
+   "label": "Transaction Date",
+   "read_only": 1,
+   "reqd": 1
+  },
+  {
+   "fieldname": "reference_date",
+   "fieldtype": "Date",
+   "in_list_view": 1,
+   "label": "Reference Date",
+   "read_only": 1,
+   "reqd": 1
+  },
+  {
+   "fieldname": "clearance_date",
+   "fieldtype": "Date",
+   "label": "Clearance Date",
+   "read_only": 1,
+   "reqd": 1
+  },
+  {
+   "collapsible": 1,
+   "fieldname": "column_break_8",
+   "fieldtype": "Tab Break",
+   "read_only": 1,
+   "label": "Bank Information"
+  },
+  {
+   "fieldname": "bank",
+   "fieldtype": "Link",
+   "label": "Bank",
+   "read_only": 1,
+   "options": "Bank"
+  },
+  {
+   "fieldname": "party_type",
+   "fieldtype": "Link",
+   "label": "Party Type",
+   "options": "DocType",
+   "read_only": 1,
+   "reqd": 1
+  },
+  {
+   "fieldname": "column_break_12",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "party",
+   "fieldtype": "Dynamic Link",
+   "label": "Party",
+   "options": "party_type",
+   "read_only": 1,
+   "reqd": 1
+  },
+  {
+   "fieldname": "amount",
+   "fieldtype": "Int",
+   "label": "Amount",
+   "read_only": 1,
+   "reqd": 1
+  },
+  {
+   "fieldname": "amended_from",
+   "fieldtype": "Link",
+   "label": "Amended From",
+   "no_copy": 1,
+   "options": "Cheques",
+   "print_hide": 1,
+   "read_only": 1
+  },
+  {
+   "fieldname": "bank_account",
+   "fieldtype": "Link",
+   "label": "Bank Account",
+   "options": "Account"
+  },
+  {
+   "fieldname": "number",
+   "fieldtype": "Data",
+   "label": "Number",
+   "read_only": 1,
+   "reqd": 1,
+   "set_only_once": 1,
+   "unique": 1
+  },
+  {
+   "collapsible": 1,
+   "fieldname": "party_information_section",
+   "fieldtype": "Tab Break",
+   "label": "Party Information"
+  },
+  {
+   "collapsible": 1,
+   "fieldname": "reference_section",
+   "fieldtype": "Tab Break",
+   "label": "Reference"
+  },
+  {
+   "fieldname": "reference_type",
+   "fieldtype": "Link",
+   "label": "Reference Type",
+   "options": "DocType"
+  },
+  {
+   "fieldname": "column_break_19",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "reference_name",
+   "fieldtype": "Dynamic Link",
+   "label": "Reference",
+   "options": "reference_type"
+  },
+  {
+   "fieldname": "company",
+   "fieldtype": "Link",
+   "label": "Company",
+   "options": "Company",
+   "reqd": 1
+  },
+  {
+   "fieldname": "party_account",
+   "fieldtype": "Link",
+   "label": "Party Account",
+   "options": "Account",
+   "reqd": 1
+  },
+  {
+   "allow_on_submit": 1,
+   "fieldname": "last_transaction_account",
+   "fieldtype": "Link",
+   "hidden": 1,
+   "label": "Last Transaction Account",
+   "no_copy": 1,
+   "options": "Account",
+   "read_only": 1
+  },
+  {
+   "fieldname": "cheque_status",
+   "fieldtype": "Link",
+   "label": "Status",
+   "options": "Cheque Status",
+   "read_only": 1,
+   "reqd": 1
+  },
+  {
+   "fieldname": "against_account",
+   "fieldtype": "Link",
+   "label": "Against Account",
+   "options": "Account",
+   "read_only": 1
+  },
+  {
+   "fieldname": "issuer_bank",
+   "fieldtype": "Data",
+   "read_only": 1,
+   "label": "issuer Bank"
+  },
+  {
+   "fieldname": "endorsement_tab",
+   "fieldtype": "Tab Break",
+   "label": "Endorsement"
+  },
+  {
+   "fieldname": "endorsed_part_type",
+   "fieldtype": "Link",
+   "label": "Party Type",
+   "read_only": 1,
+   "options": "DocType"
+  },
+  {
+   "fieldname": "endoresd_party",
+   "fieldtype": "Dynamic Link",
+   "label": "Party",
+   "read_only": 1,
+   "options": "endorsed_part_type"
+  },
+  {
+   "fieldname": "endoresd_transaction",
+   "fieldtype": "Link",
+   "label": "Transaction",
+   "read_only": 1,
+   "options": "Payment Entry"
+  },
+  {
+   "fieldname": "column_break_22",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "column_break_31",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "column_break_32",
+   "fieldtype": "Tab Break",
+   "label": "Details"
+  },
+  {
+   "fieldname": "column_break_33",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "dashboard_tab",
+   "fieldtype": "Tab Break",
+   "label": "Dashboard",
+   "show_dashboard": 1
+  },
+  {
+   "fieldname": "details_tab",
+   "fieldtype": "Tab Break",
+   "label": "Details"
+  },
+  {
+   "fieldname": "column_break_13",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "column_break_15",
+   "fieldtype": "Column Break"
+  }
+ ],
+ "in_create": 1,
+ "index_web_pages_for_search": 1,
+ "is_submittable": 1,
+ "links": [
+  {
+   "group": "Transactions",
+   "link_doctype": "Payment Entry",
+   "link_fieldname": "cheque"
+  },
+  {
+   "group": "Transactions",
+   "link_doctype": "Journal Entry",
+   "link_fieldname": "reference_name"
+  }
+ ],
+ "modified": "2022-09-16 14:14:18.015122",
+ "modified_by": "Administrator",
+ "module": "Cheque Cycle",
+ "name": "Cheques",
+ "naming_rule": "By fieldname",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  },
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "Accounts Manager",
+   "share": 1,
+   "write": 1
+  },
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "Accounts User",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": [],
+ "title_field": "number"
+}

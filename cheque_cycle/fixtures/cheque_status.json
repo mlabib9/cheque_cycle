@@ -1,0 +1,57 @@
+[
+ {
+  "action_name": null,
+  "debit_account": null,
+  "default_cheque": 1,
+  "destination_account_type": "Specific Account",
+  "docstatus": 0,
+  "doctype": "Cheque Status",
+  "modified": "2022-08-31 13:43:36.590017",
+  "name": "New",
+  "title": "New"
+ },
+ {
+  "action_name": "Return",
+  "debit_account": null,
+  "default_cheque": 0,
+  "destination_account_type": "Cheque Party Account",
+  "docstatus": 0,
+  "doctype": "Cheque Status",
+  "modified": "2022-08-31 13:48:44.376648",
+  "name": "Returned",
+  "title": "Returned"
+ },
+ {
+  "action_name": "Collect",
+  "debit_account": null,
+  "default_cheque": 0,
+  "destination_account_type": "Bank Account",
+  "docstatus": 0,
+  "doctype": "Cheque Status",
+  "modified": "2022-08-31 13:49:01.969556",
+  "name": "Collected",
+  "title": "Collected"
+ },
+ {
+  "action_name": "Rejected",
+  "debit_account": null,
+  "default_cheque": 0,
+  "destination_account_type": "First Receive/Pay Account (Not Party)",
+  "docstatus": 0,
+  "doctype": "Cheque Status",
+  "modified": "2022-08-31 13:49:34.477842",
+  "name": "Rejected",
+  "title": "Rejected"
+ },
+ {
+  "action_name": "Endore",
+  "debit_account": null,
+  "default_cheque": 0,
+  "destination_account_type": "Transfer to Another Party",
+  "docstatus": 0,
+  "doctype": "Cheque Status",
+  "modified": "2022-08-31 13:52:05.706703",
+  "name": "Endorsed",
+  "title": "Endorsed"
+ }
+]
